@@ -15,7 +15,7 @@ async function getFeaturedProducts(): Promise<Product[]> {
   return products;
 }
 
-export default async function Home() {
+export default async function HomePage() {
   const [highlightedProduct, ...otherProducts] = await getFeaturedProducts();
 
   return (
