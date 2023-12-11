@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 
 export interface CartItem {
-  productId: string;
+  productId: number;
   quantity: number;
 }
 
 export interface CartContextType {
   items: CartItem[];
-  addToCart: (productId: string) => void;
+  addToCart: (productId: number) => void;
 }
 
 export interface CartContextProviderProps {
