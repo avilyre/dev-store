@@ -6,6 +6,8 @@ import { Product } from "@/data/types/product";
 import { api } from "@/data/api";
 
 async function searchProducts(query: string): Promise<Product[]> {
+  await new Promise(resolve => setTimeout(resolve, 2000));
+
   const response = await api(`/products/search?q=${query}`, {
     next: {
       revalidate: 60 * 60, // 1hour
