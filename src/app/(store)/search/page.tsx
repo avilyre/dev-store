@@ -39,7 +39,7 @@ export default async function Search({ searchParams }: SearchProps) {
           <Link
             key={product.id}
             href="/products/moletom-never-stop-learning"
-            className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-center"
+            className="product-item group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-center"
           >
             <Image
               className="group-hover:scale-105 transition-transform duration-500"

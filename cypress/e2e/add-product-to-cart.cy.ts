@@ -10,10 +10,11 @@ describe("add to cart product", () => {
   });
 
   it("should not be able to add duplicated products on cart", () => {
-    cy.visit("http://localhost:3000");
-    cy.get('a[href^="/product"]').first().click();
+    cy.searchByQuery("ai side");
 
+    cy.get('a[href^="/product"]').first().click();
     cy.get('button[class^="add-to-cart-button"]').click();
+
     cy.contains("Cart (2)").should("not.exist");
   });
 });

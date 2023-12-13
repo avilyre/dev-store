@@ -2,5 +2,8 @@
   "extends": [
     "next/core-web-vitals",
     "@as-code/eslint-config/react"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-namespace": "off"
+  }
 }
