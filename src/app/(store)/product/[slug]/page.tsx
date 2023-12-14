@@ -38,8 +38,6 @@ export async function generateStaticParams() {
 export default async function ProductPage({ params }: ProductProps) {
   const product = await getProduct(params.slug);
 
-  console.log(params);
-
   return (
     <main className="relative grid grid-cols-3 max-h-[860px]">
       <div className="col-span-2 overflow-hidden">
