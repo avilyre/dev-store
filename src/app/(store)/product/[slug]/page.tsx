@@ -36,7 +36,6 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({ params }: ProductProps) {
-  await new Promise(resolve => setTimeout(resolve, 10000));
   const product = await getProduct(params.slug);
 
   return (
