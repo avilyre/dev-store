@@ -1,7 +1,11 @@
 {
-  "name": "dev-store",
+  "name": "devstore",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Avily Silva",
+    "email": "avilyre@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
