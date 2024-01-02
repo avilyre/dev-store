@@ -20,7 +20,7 @@ DevStore is an application focused on ecommerce, with some small functionalities
 - *:fire: Zod - Validation data format*
 - *:fire: Lucide React - Iconography*
 - *:fire: Cypress - For end-to-end testing*
-- 
+
 ### Important technical points
 
 - *:gear: All featured products was statically generated to improve detail page*
